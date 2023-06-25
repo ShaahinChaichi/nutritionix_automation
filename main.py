@@ -7,8 +7,8 @@ WEIGHT_KG = "84"
 HEIGHT_CM = "174"
 AGE = "49"
 
-APP_ID = "a41d7881"
-API_KEY = "0293ec30da232b1567f437a2a618f009"
+APP_ID = os.environ.get("API_ID")
+API_KEY = os.environ.get("API_KEY")
 
 exercise_endpoint = "https://trackapi.nutritionix.com/v2/natural/exercise"
 sheet_endpoint = "https://api.sheety.co/58298ae4a7485b0180431fd0c48a8e5d/myWorkouts/workouts"
